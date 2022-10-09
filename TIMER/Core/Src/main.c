@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
+#include "fsm_automatic.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,56 +91,14 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
-  void reset(){
- 	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
- 	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
- 	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_RESET);
- 	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_RESET);
- 	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET);
- 	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_RESET);
- 	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_6,GPIO_PIN_RESET);
-   }
-
-   void display7SEG(int num){
- 	  reset();
- 	   if(num==1){
- 		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
- 		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_SET);
- 		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
- 		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
- 		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_6,GPIO_PIN_SET);
- 	  }
- 	   if(num==2){
- 		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_SET);
- 		  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
- 	   }
-   }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer1(50);
-  int flag = 0;
-  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,1);
-  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,1);
+  status = INIT;
   while (1)
   {
-	  if(timer1_flag == 1){
-	 		setTimer1(50);
-	 		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
-	 		if(flag == 0){
-	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,0);
-	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,1);
-	 			display7SEG(1);
-	 			flag = 1;
-	 		}
-	 		else if(flag == 1){
-	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,1);
-	 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,0);
-	 			display7SEG(2);
-	 			flag = 0;
-	 		}
-	 	  }
+	 fsm_automatic_run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

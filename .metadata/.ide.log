@@ -633,3 +633,80 @@
 2022-10-05 14:02:41,433 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2681mS.
 2022-10-05 14:02:41,435 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
 2022-10-05 14:02:41,453 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-10-05 14:56:21,748 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-05 14:56:24,386 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-05 14:56:33,708 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 868478240 Bytes (1073741824)
+2022-10-05 14:56:34,662 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 892073248 Bytes (1073741824)
+2022-10-05 14:56:35,861 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 938732832 Bytes (1073741824)
+2022-10-05 14:56:36,192 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-10-05 14:56:36,192 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-10-05 14:56:36,193 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-10-05 14:56:36,193 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-10-05 14:56:36,193 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2022-10-05 14:56:36,194 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-10-05 14:56:36,424 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\license.tmp_save
+2022-10-05 14:56:36,492 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\license.tmp
+2022-10-05 14:56:36,530 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\gpio.tmp_save
+2022-10-05 14:56:36,620 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\gpio.tmp
+2022-10-05 14:56:36,776 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_it.c_save
+2022-10-05 14:56:36,889 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_it.c
+2022-10-05 14:56:36,898 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_it.h_save
+2022-10-05 14:56:36,989 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_it.h
+2022-10-05 14:56:37,017 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_hal_msp.c_save
+2022-10-05 14:56:37,136 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_hal_msp.c
+2022-10-05 14:56:37,140 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\system.tmp_save
+2022-10-05 14:56:37,210 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\system.tmp
+2022-10-05 14:56:37,229 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-10-05 14:56:37,300 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_hal_conf.h
+2022-10-05 14:56:37,312 [WARN] IPConfigManager:3148 - IP not found : TIM
+2022-10-05 14:56:37,313 [WARN] CodeGenerator:3268 - IP not found : null
+2022-10-05 14:56:37,330 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\main.h_save
+2022-10-05 14:56:37,433 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\main.h
+2022-10-05 14:56:37,445 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\main.c_save
+2022-10-05 14:56:37,592 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\main.c
+2022-10-05 14:56:38,613 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 245mS.
+2022-10-05 14:56:38,617 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-10-05 14:56:39,076 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-10-05 14:56:40,985 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2368mS.
+2022-10-05 14:56:40,986 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-10-05 14:56:41,011 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2022-10-05 14:57:19,476 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-05 14:57:20,384 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 875422856 Bytes (1073741824)
+2022-10-05 14:57:21,418 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 906880136 Bytes (1073741824)
+2022-10-05 14:57:22,779 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 727598312 Bytes (1073741824)
+2022-10-05 14:57:23,027 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-10-05 14:57:23,027 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-10-05 14:57:23,027 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-10-05 14:57:23,027 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-10-05 14:57:23,027 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2022-10-05 14:57:23,029 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-10-05 14:57:23,368 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\license.tmp_save
+2022-10-05 14:57:23,416 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\license.tmp
+2022-10-05 14:57:23,447 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\gpio.tmp_save
+2022-10-05 14:57:23,510 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\gpio.tmp
+2022-10-05 14:57:23,608 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_it.c_save
+2022-10-05 14:57:23,692 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_it.c
+2022-10-05 14:57:23,699 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_it.h_save
+2022-10-05 14:57:23,758 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_it.h
+2022-10-05 14:57:23,776 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_hal_msp.c_save
+2022-10-05 14:57:23,923 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\stm32f1xx_hal_msp.c
+2022-10-05 14:57:23,928 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\system.tmp_save
+2022-10-05 14:57:23,978 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\MXTmpFiles\system.tmp
+2022-10-05 14:57:23,996 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-10-05 14:57:24,083 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\stm32f1xx_hal_conf.h
+2022-10-05 14:57:24,099 [WARN] IPConfigManager:3148 - IP not found : TIM
+2022-10-05 14:57:24,099 [WARN] CodeGenerator:3268 - IP not found : null
+2022-10-05 14:57:24,114 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\main.h_save
+2022-10-05 14:57:24,179 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Inc\main.h
+2022-10-05 14:57:24,188 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\main.c_save
+2022-10-05 14:57:24,290 [INFO] CodeEngine:257 - Generated code: C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\Core\Src\main.c
+2022-10-05 14:57:25,164 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 174mS.
+2022-10-05 14:57:25,168 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-10-05 14:57:25,570 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-10-05 14:57:27,780 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2612mS.
+2022-10-05 14:57:27,783 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2022-10-05 14:57:27,787 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-10-09 12:58:49,227 [INFO] Activator:177 - 
+
+
+2022-10-09 12:58:49,229 [INFO] Activator:178 - !SESSION log4j initialized
