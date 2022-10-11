@@ -22,6 +22,11 @@
 			status = AUTO_GREEN;
 			setTimer(300);
 			}
+			if(button1_flag == 1){
+				button1_flag=0;
+				status = MAN_RED;
+				setTimer(10000);
+			}
 			break;
 		case AUTO_GREEN:
 			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,0);
