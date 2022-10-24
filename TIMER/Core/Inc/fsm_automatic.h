@@ -11,5 +11,6 @@
 #include "global.h"
 #include "software_timer.h"
 #include "main.h"
+#include "button.h"
 void fsm_automatic_run();
 #endif /* INC_FSM_AUTOMATIC_H_ */

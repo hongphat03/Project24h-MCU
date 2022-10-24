@@ -4,12 +4,12 @@
  *  Created on: Oct 5, 2022
  *      Author: Hong Phat
  */
-#include "software_timer.h">
+#include "software_timer.h"
 
 int timer1_counter = 0;
 int timer1_flag = 0;
 void setTimer(int duration){
-	timer1_counter = duration;
+	timer1_counter = duration/10;
 	timer1_flag = 0;
 }
 void timerRun(){
