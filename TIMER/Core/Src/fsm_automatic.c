@@ -5,49 +5,74 @@
  *      Author: Hong Phat
  */
 #include "fsm_automatic.h"
-
-	void fsm_automatic_run(){
+void fsm_simple_buttons_run () {
 		switch(status){
-		case INIT:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7,1);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6,1);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,1);
-			status = AUTO_RED;
-			setTimer(500);
+		case INIT9:
+			counter = 10 ;
+			setTimer(1000);
+			status = NORMAL;
 			break;
-		case AUTO_RED:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7,1);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6,1);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,0);
+		case INIT0:
+			counter = 1;
+			setTimer(1000);
+			status = NORMAL;
+			break;
+		case NORMAL:
 			if(timer1_flag == 1){
-			status = AUTO_GREEN;
-			setTimer(300);
-			}
-			if(isButton1Pressed()== 1){
-				//button1_flag=0;
-				status = MAN_RED;
 				setTimer(1000);
+				if(counter == 0){
+					status = INIT9;
+				}
+				else{
+				counter --;
+				display7SEG();
+				status = NORMAL;
+				}
+			}
+			if( isButton1Pressed() == 1){
+				status = INIT0;
+			}
+			if( button2_flag == 1){
+				setTimer(1000);
+				status = INC;
+			}
+			if(button3_flag == 1){
+				setTimer(1000);
+				status = DEC;
 			}
 			break;
-		case AUTO_GREEN:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7,1);
-			HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,0);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,1);
-			if(timer1_flag==1){
-			status = AUTO_YELLOW;
-			setTimer(200);
-			}
+		case INC:
+				if(isButton2Pressed() == 1){
+					counter++;
+					if(counter == 10){
+						counter = 0;
+					}
+					display7SEG();
+					setTimer(1000);
+				}
+				else{
+					if(timer1_flag == 1){
+						status = NORMAL;
+					}
+				}
 			break;
-		case AUTO_YELLOW:
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,1);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6,1);
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7,0);
-			if(timer1_flag == 1){
-				status = AUTO_RED;
-				setTimer(500);
+		case DEC:
+			if(isButton3Pressed() == 1){
+				counter--;
+				if(counter == -1 ){
+					counter = 9;
+				}
+				display7SEG();
+			}
+			else{
+				if(timer1_flag == 1){
+					status = NORMAL;
+				}
 			}
 			break;
 		default:
 			break;
+
 		}
-	}
+
+}

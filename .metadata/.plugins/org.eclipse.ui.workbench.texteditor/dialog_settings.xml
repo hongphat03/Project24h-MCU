@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="//TODO"/>
+		<list key="findhistory">
+			<item value="//TODO"/>
+			<item value="HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,26 @@
+/*
+ * fsm_automatic.c
+ *
+ *  Created on: Oct 9, 2022
+ *      Author: Hong Phat
+ */
+#include "fsm_automatic.h"
+void fsm_simple_buttons_run () {
+		switch(status){
+		case INIT:
+			counter = 9;
+			status = NORMAL;
+		case NORMAL:
+			if(timer1_flag == 1){
+				coutern --;
+				status = NORMAL;
+			}
+			if( isButton1Pressed() == 1){
+				status = INC;
+			}
+		case INC:
+		case DEC:
+
+		}
+
+}

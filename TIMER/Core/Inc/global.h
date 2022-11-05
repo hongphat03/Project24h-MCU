@@ -10,16 +10,23 @@
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
-#define INIT			1
-#define AUTO_RED 		2
-#define AUTO_GREEN 		3
-#define AUTO_YELLOW 	4
+#define INIT0			1
+#define INIT9			2
+#define NORMAL			3
+#define INC				4
+#define DEC				5
 
-extern int status ;
-
-#define MAN_RED 12
-#define MAN_GREEN 13
-#define MAN_YELLOW 14
+extern int counter;
+extern int status;
+//extern int status ;
+//extern int status2;
+//extern int timer_red;
+//extern int timer_yellow;
+//extern int timer_green;
+//
+//#define MAN_RED 12
+//#define MAN_GREEN 13
+//#define MAN_YELLOW 14
 
 
 #endif /* INC_GLOBAL_H_ */

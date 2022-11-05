@@ -1,10 +1,10 @@
-23:25:23 **** Incremental Build of configuration Debug for project TIMER ****
+13:12:52 **** Incremental Build of configuration Debug for project TIMER ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/fsm_manual.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_manual.d" -MT"Core/Src/fsm_manual.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_manual.o"
-../Core/Src/fsm_manual.c: In function 'fsm_manual_run':
-../Core/Src/fsm_manual.c:21:6: warning: implicit declaration of function 'isButton1Pressed' [-Wimplicit-function-declaration]
-   21 |   if(isButton1Pressed() == 1){
-      |      ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/fsm_automatic.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_automatic.d" -MT"Core/Src/fsm_automatic.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_automatic.o"
+../Core/Src/fsm_automatic.c: In function 'fsm_simple_buttons_run':
+../Core/Src/fsm_automatic.c:28:5: warning: implicit declaration of function 'display7SEG' [-Wimplicit-function-declaration]
+   28 |     display7SEG();
+      |     ^~~~~~~~~~~
 arm-none-eabi-gcc -o "TIMER.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Hong Phat\Desktop\LAB2 MCU\TIMER\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: TIMER.elf
  
@@ -13,15 +13,15 @@ arm-none-eabi-objdump -h -S  TIMER.elf  > "TIMER.list"
 arm-none-eabi-objcopy  -O ihex  TIMER.elf  "TIMER.hex"
 arm-none-eabi-objcopy  -O binary  TIMER.elf  "TIMER.bin"
    text	   data	    bss	    dec	    hex	filename
-   7924	     40	   1656	   9620	   2594	TIMER.elf
+   8404	     76	   1684	  10164	   27b4	TIMER.elf
 Finished building: default.size.stdout
  
-Finished building: TIMER.bin
 Finished building: TIMER.hex
+Finished building: TIMER.bin
  
 Finished building: TIMER.list
  
  
 
-23:25:24 Build Finished. 0 errors, 1 warnings. (took 1s.20ms)
+13:12:53 Build Finished. 0 errors, 1 warnings. (took 1s.249ms)
 
