@@ -16,9 +16,9 @@
 #define INC				4
 #define DEC				5
 #define RESET			6
-#define INC_LONGPRESS	7
+#define INC_LONGPRESS	 	7
 #define	DEC_LONGPRESS	8
-#define COUNT_DOWN 		9
+
 extern int counter;
 extern int status;
 

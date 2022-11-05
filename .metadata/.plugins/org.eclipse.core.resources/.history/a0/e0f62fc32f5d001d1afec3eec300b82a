@@ -97,10 +97,14 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   status = INIT;
-  setTimer4(1000);
+// status2 = INIT;
+// setTimer2(5000);
   while (1)
   {
+//	  fsm_automatic_run();
+//	  fsm_manual_run();
 	  fsm_simple_buttons_run();
+	  //fsm_simple_buttons_run3();
 	  fsm_simple_buttons_run2();
 	  /* USER CODE END WHILE */
 
