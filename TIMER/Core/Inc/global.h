@@ -10,14 +10,18 @@
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
-#define INIT0			1
+#define INIT			1
 #define INIT9			2
 #define NORMAL			3
 #define INC				4
 #define DEC				5
+#define RESET			6
+#define INC_LONGPRESS	 	7
+#define	DEC_LONGPRESS	8
 
 extern int counter;
 extern int status;
+
 //extern int status ;
 //extern int status2;
 //extern int timer_red;

@@ -5,6 +5,6 @@
  *      Author: Hong Phat
  */
 #include "global.h"
-int counter;
+int counter = 0;
 int status;
 

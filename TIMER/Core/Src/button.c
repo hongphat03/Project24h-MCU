@@ -18,12 +18,15 @@ int KeyReg0[3]= {NORMAL_STATE,NORMAL_STATE,NORMAL_STATE};
 int KeyReg1[3] = {NORMAL_STATE,NORMAL_STATE,NORMAL_STATE};
 int KeyReg2[3] = {NORMAL_STATE,NORMAL_STATE,NORMAL_STATE};
 int KeyReg3[3] = {NORMAL_STATE,NORMAL_STATE,NORMAL_STATE};
-int TimeOutForKeyPress =  3000;
+int is_pressed[3]={0,0,0};
+int TimeOutForKeyPress[3] =  {300,300,300};
 int button1_flag = 0;
 int button2_flag = 0;
 int button3_flag = 0;
 
-
+int ispressed(int i){
+	return is_pressed[i];
+}
 int isButton1Pressed(){
 	if(button1_flag == 1){
 		button1_flag = 0;
@@ -73,20 +76,27 @@ void getKeyInput(){
 		  KeyReg2[i] = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_9);
 	  }
 	  if ((KeyReg1[i] == KeyReg0[i]) && (KeyReg1[i] == KeyReg2[i])){
-		  if (KeyReg2[i] != KeyReg3[i]){
-			  KeyReg3[i] = KeyReg2[i];
-			  if (KeyReg2[i] == PRESSED_STATE){
-				TimeOutForKeyPress = 3000;
-				subKeyProcess(i);
-			  }
-		}else{
-		   TimeOutForKeyPress --;
-			if (TimeOutForKeyPress == 0){
-			  KeyReg3[i] = NORMAL_STATE;
-			}
-		}
+	  		  if (KeyReg2[i] != KeyReg3[i]){
+	  			  KeyReg3[i] = KeyReg2[i];
+	  			  if (KeyReg2[i] == PRESSED_STATE){
+
+	  				TimeOutForKeyPress[i] = 300;
+	  				subKeyProcess(i);
+	  			  }
+	  			  else{
+	  				is_pressed[i] = 0;
+	  			  }
+	  		}else{
+	  			if(TimeOutForKeyPress[i] > 0)
+	  		    TimeOutForKeyPress[i] --;
+	  			else if (TimeOutForKeyPress[i] == 0 && KeyReg2[i] == PRESSED_STATE){
+	  			  //HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,0);
+	  			  is_pressed[i] = 1;
+	  			  KeyReg3[i] = NORMAL_STATE;
+	  			}
+	  		}
+	  	  }
 	  }
-	}
 }
 
 

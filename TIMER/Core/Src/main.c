@@ -96,15 +96,17 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  status = INIT9;
+  status = INIT;
 // status2 = INIT;
 // setTimer2(5000);
   while (1)
   {
 //	  fsm_automatic_run();
 //	  fsm_manual_run();
-	  fsm_simple_buttons_run ();
-    /* USER CODE END WHILE */
+	  fsm_simple_buttons_run();
+	  //fsm_simple_buttons_run3();
+	  fsm_simple_buttons_run2();
+	  /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }

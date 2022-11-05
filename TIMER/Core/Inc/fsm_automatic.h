@@ -14,4 +14,7 @@
 #include "button.h"
 #include "7segment.h"
 void fsm_automatic_run();
+void fsm_simple_buttons_run();
+void fsm_simple_buttons_run3();
+void fsm_simple_buttons_run2();
 #endif /* INC_FSM_AUTOMATIC_H_ */

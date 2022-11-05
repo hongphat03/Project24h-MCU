@@ -13,7 +13,7 @@ int timer1_flag = 0;
 int timer2_flag = 0 ;
 int timer3_flag = 0;
 int TICK = 10;
-void setTimer(int duration){
+void setTimer1(int duration){
 	timer1_counter = duration/TICK;
 	timer1_flag = 0;
 }
